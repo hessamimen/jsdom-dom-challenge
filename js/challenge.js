@@ -102,6 +102,7 @@ commentForm.addEventListener('submit',(event) => {
    const newComment = document.createElement('p')
    newComment.textContent = comment.value;
    commentlist.append(newComment)
+   commentForm.reset()
 })
 
 function updateLikes(){
